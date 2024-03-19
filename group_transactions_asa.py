@@ -2,6 +2,7 @@
 # Create NFT that Account 2 will sell
 # Create opt-in transaction from Account 2 to Account 1
 # Creat Group transaction
+# Hello World
 
 from algosdk import account, mnemonic, transaction
 from algosdk.v2client import algod
@@ -19,7 +20,7 @@ mn = 'forum eagle priority become joke alcohol false kiwi task orphan town day e
 private_key = mnemonic.to_private_key(mn)
 # print(f"Base64 encoded private key: {private_key}")
 address_2 = account.address_from_private_key(private_key)
-print(f"Address: {address_2}")
+print(f"The Address: {address_2}")
 address_1 = '4D5QWA76FIBL7FH6DX7FBRU5TZHE2RPINZMCYWVDJHHFDFTZVUPH64T66M'
 
 # Account 2 creates an NFT called `ESG` with a total supply
